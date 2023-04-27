@@ -1,0 +1,12 @@
+import tkinter as tk
+form = tk.Tk()
+form.title()
+form.title("DERS 5")
+#form.geometry komutu (x ve y de ki alanı belirler) örn == (500x500) , (500x500 +x +y) burdaki x ve ye pencerenin ne kadar genişletilebileceğini gösteriri
+form.geometry("500x400")
+def topla ():
+    print("topla")
+#Button komutu adındanda alaşılabileceği gibi ekrana bir tuş koyar 
+button = tk.Button(form,text="tıkla",fg='steel blue',bg='yellow',command="topla")
+button.pack()
+form.mainloop()
